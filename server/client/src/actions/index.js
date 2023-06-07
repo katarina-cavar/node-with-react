@@ -9,10 +9,10 @@ const fetchUser = () => {
 }
 
 // const fetchUser = () => {
-//     const request = axios.get('api/current_user');
+//     const response = axios.get('api/current_user');
 //
 //     return  {
 //         type: FETCH_USER,
-//         payload: request
+//         payload: response
 //     };
 // }
