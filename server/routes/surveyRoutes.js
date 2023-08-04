@@ -22,6 +22,8 @@ module.exports = (app) => {
         // Great place to send an email!
         const mailer = new Mailer(survey, surveyTemplate(survey));
         mailer.send();
+        // inside the browser Inspect -> Console:
         // const survey = {title: 'my title', subject: 'my subject', recipients: 'kcavar96@gmail.com', body: 'Heres the body of the email'};
+        // axios.post('/api/surveys', survey);
     });
 }
