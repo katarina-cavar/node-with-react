@@ -12,7 +12,7 @@ module.exports = (app) => {
     });
 
     app.post('/api/surveys/webhooks', (req, res) => {
-        res.send(req.body);
+        console.log(req.body);
         res.send({});
     });
 
