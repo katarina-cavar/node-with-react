@@ -9,3 +9,8 @@ Node with React Udemy: https://www.udemy.com/course/node-with-react-fullstack-we
 *August 04 2023*
 - lesson 157: 
   - didn't add REDIRECT_DOMAIN env variable to railway / heroku because my railway account is stopped
+
+*September 13 2023*
+- lesson 197:
+  - `ngrok http 5000`
+  - localtunnel URL: https://nvrnfaspmcnds.loca.lt
