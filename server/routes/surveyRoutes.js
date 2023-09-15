@@ -16,7 +16,7 @@ module.exports = (app) => {
 
     app.post('/api/surveys/webhooks', (req, res) => {
         const events = _.map(req.body, (event) => {
-            const path = new URL(event.url).pathname;
+            const pathname = new URL(event.url).pathname;
             const p = new Path('/api/surveys/:surveyId/:choice');
             console.log(p.test(pathname));
         });
