@@ -31,7 +31,12 @@ module.exports = (app) => {
             }
         });
 
-        console.log(events);
+        const compactEvents = _.compact(events); // removes all undefined events
+        const uniqueEvents = _.uniqBy(compactEvents, 'email', 'surveyId'); // removes duplicates
+
+        console.log(uniqueEvents);
+
+        res.send({});
     });
 
     app.post('/api/surveys', requireLogin, requireCredits, async (req, res) => {
